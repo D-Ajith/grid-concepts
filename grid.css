@@ -1,0 +1,39 @@
+.one{grid-area: one;}
+.two{grid-area: two;}
+.three{grid-area:three ;}
+.four{grid-area:four ;}
+.five{grid-area:five ;}
+.container{
+    display:grid;
+    gap:10px;
+    grid-template-areas:
+    "one one     one"
+    "two two   three"
+    "four four three"
+    "five five  five"
+}
+p{
+    background-color: yellow;
+    text-align: center;
+}
+.container2{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+.box{
+    background-color: purple;
+    color:white;
+    text-align: center;
+}
+.container3{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100px 300px;
+    gap:10px;
+}
+.box1{
+    background-color: purple;
+    color:white;
+    text-align: center;
+}
